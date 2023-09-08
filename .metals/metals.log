@@ -1,0 +1,88 @@
+2023.09.08 00:39:24 INFO  Started: Metals version 1.0.1 in folders 'C:\Projects\Water-Supply-network' for client Visual Studio Code 1.81.1.
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:C:\Projects\Water-Supply-network\.metals\metals (H2 2.1)
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.028s)
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Sep 08, 2023 12:39:24 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.026s)
+2023.09.08 00:39:24 INFO  time: initialize in 0.72s
+2023.09.08 00:39:26 INFO  Running List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\scala-cli.BAT, setup-ide, C:\Projects\Water-Supply-network)
+2023.09.08 00:39:27 INFO  Attempting to connect to the build server...
+2023.09.08 00:39:27 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.08 00:39:27 INFO  Attempting to connect to the build server...
+2023.09.08 00:39:27 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.08 00:39:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.08 00:39:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.08 00:39:30 INFO  no build target found for C:\Projects\Water-Supply-network\data-releasing\build.sbt. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.08 00:39:32 WARN  Could not find semantic tokens for: file:///C:/Projects/Water-Supply-network/data-releasing/build.sbt
+2023.09.08 00:39:32 INFO  time: code lens generation in 6.04s
+2023.09.08 00:39:35 INFO  time: Connected to build server in 7.66s
+2023.09.08 00:39:35 INFO  time: Connected to build server in 7.62s
+2023.09.08 00:39:35 INFO  Connected to Build server: scala-cli v0.1.17
+2023.09.08 00:39:35 INFO  Connected to Build server: scala-cli v0.1.17
+2023.09.08 00:39:35 INFO  time: Imported build in 0.51s
+2023.09.08 00:39:35 INFO  time: Imported build in 0.51s
+2023.09.08 00:39:36 INFO  Deduplicating compilation of project_bd2c96d2de from bsp client 'scala-cli 0.1.17' (since 2.254s)
+2023.09.08 00:39:36 INFO  compiling project_bd2c96d2de (1 scala source)
+2023.09.08 00:39:36 INFO  compiling project_bd2c96d2de (1 scala source)
+2023.09.08 00:39:37 INFO  Deduplicating compilation of project_bd2c96d2de from bsp client 'scala-cli 0.1.17' (since 3.737s)
+2023.09.08 00:39:38 INFO  no build target found for C:\Projects\Water-Supply-network\data-releasing\build.sbt. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.08 00:39:38 INFO  time: compiled project_bd2c96d2de in 1.91s
+2023.09.08 00:39:38 INFO  Deduplicating compilation of project_bd2c96d2de-test from bsp client 'scala-cli 0.1.17' (since 3.761s)
+2023.09.08 00:39:39 INFO  time: indexed workspace in 3.44s
+2023.09.08 00:39:39 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\build.sbt
+2023.09.08 00:39:39 INFO  time: indexed workspace in 3.88s
+2023.09.08 00:39:39 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\build.sbt
+2023.09.08 00:39:40 INFO  no build target found for C:\Projects\Water-Supply-network\data-releasing\build.sbt. Using presentation compiler with project's scala-library version: 3.2.0
+2023.09.08 00:39:41 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\build.sbt
+2023.09.08 00:39:42 WARN  Could not find semantic tokens for: file:///C:/Projects/Water-Supply-network/data-releasing/build.sbt
+2023.09.08 00:39:42 WARN  Could not find semantic tokens for: file:///C:/Projects/Water-Supply-network/data-releasing/build.sbt
+2023.09.08 00:39:42 INFO  time: code lens generation in 1.74s
+2023.09.08 01:03:15 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\build.sbt
+2023.09.08 01:03:15 WARN  Could not find semantic tokens for: file:///C:/Projects/Water-Supply-network/data-releasing/build.sbt
+2023.09.08 01:03:15 WARN  Could not find semantic tokens for: file:///C:/Projects/Water-Supply-network/data-releasing/build.sbt
+2023.09.08 01:05:15 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\build.sbt
+2023.09.08 09:34:08 INFO  compiling project_bd2c96d2de (1 scala source)
+2023.09.08 09:34:08 INFO  time: compiled project_bd2c96d2de in 0.89s
+2023.09.08 09:39:33 INFO  compiling project_bd2c96d2de (1 scala source)
+2023.09.08 09:39:33 INFO  time: compiled project_bd2c96d2de in 0.88s
+2023.09.08 09:41:00 INFO  compiling project_bd2c96d2de (1 scala source)
+2023.09.08 09:41:00 INFO  time: compiled project_bd2c96d2de in 0.8s
+2023.09.08 09:41:04 INFO  compiling project_bd2c96d2de (1 scala source)
+2023.09.08 09:41:05 INFO  time: compiled project_bd2c96d2de in 1.04s
+2023.09.08 09:41:07 INFO  compiling project_bd2c96d2de (1 scala source)
+2023.09.08 09:41:07 INFO  time: compiled project_bd2c96d2de in 0.54s
+Sep 08, 2023 10:36:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 160
+Sep 08, 2023 10:36:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 172
+Sep 08, 2023 10:36:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 175
+2023.09.08 10:36:32 INFO  compiling project_bd2c96d2de (1 scala source)
+Sep 08, 2023 10:36:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 226
+2023.09.08 10:36:39 INFO  time: compiled project_bd2c96d2de in 7.3s
+2023.09.08 10:36:43 INFO  compiling project_bd2c96d2de (1 scala source)
+2023.09.08 10:36:45 INFO  time: compiled project_bd2c96d2de in 1.85s
+2023.09.08 10:36:49 INFO  compiling project_bd2c96d2de (1 scala source)
+2023.09.08 10:36:51 INFO  time: compiled project_bd2c96d2de in 2.45s

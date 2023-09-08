@@ -1,0 +1,10 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: initialized: JsonRpcNotificationMessage(2.0, initialized, {})[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: textDocument/didOpen: JsonRpcNotificationMessage(2.0, textDocument/didOpen, {"textDocument":{"uri":"file:///c%3A/Projects/Water-Supply-network/data-releasing/src/main/scala/Main.scala","languageId":"scala","version":2,"text":"\r\n\r\n\r\nobject enrichment extends App {\r\n    println(\"ToDo\")\r\n\r\n}\r\n\r\n"}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / collectAnalyses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0manalysis location (C:\Projects\Water-Supply-network\target\scala-2.12\zinc\inc_compile_2.12.zip,true)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 08-Sep-2023, 11:01:55 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
