@@ -8,3 +8,4 @@
 [0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 08-Sep-2023, 11:01:55 AM[0m
 [0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
 [0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

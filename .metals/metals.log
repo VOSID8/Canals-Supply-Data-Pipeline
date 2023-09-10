@@ -86,3 +86,205 @@ WARNING: Unmatched cancel notification for request id 226
 2023.09.08 10:36:45 INFO  time: compiled project_bd2c96d2de in 1.85s
 2023.09.08 10:36:49 INFO  compiling project_bd2c96d2de (1 scala source)
 2023.09.08 10:36:51 INFO  time: compiled project_bd2c96d2de in 2.45s
+2023.09.08 11:01:11 INFO  Started: Metals version 1.0.1 in folders 'C:\Projects\Water-Supply-network' for client Visual Studio Code 1.81.1.
+Sep 08, 2023 11:01:12 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 08, 2023 11:01:12 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 08, 2023 11:01:12 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 08, 2023 11:01:16 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:C:\Projects\Water-Supply-network\.metals\metals (H2 2.1)
+Sep 08, 2023 11:01:16 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.056s)
+Sep 08, 2023 11:01:16 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 08, 2023 11:01:16 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.08 11:01:16 INFO  time: initialize in 5.21s
+2023.09.08 11:01:20 INFO  Attempting to connect to the build server...
+2023.09.08 11:01:20 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.08 11:01:20 WARN  No build session currently active to reload.
+2023.09.08 11:01:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.08 11:01:25 INFO  BSP server: Starting compilation server
+2023.09.08 11:01:26 INFO  no build target found for C:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.08 11:01:30 INFO  time: code lens generation in 10s
+2023.09.08 11:01:37 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.08 11:01:37 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694151097-9031686255442749110.log'
+2023.09.08 11:01:37 INFO  BSP server: Running
+2023.09.08 11:01:37 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.08 11:01:37 INFO  BSP server: might give more details.
+2023.09.08 11:01:41 ERROR Timeout waiting for 'build/initialize' response
+2023.09.08 11:01:41 WARN  Retrying connection to the build server scala-cli
+2023.09.08 11:01:41 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.08 11:01:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.08 11:01:42 INFO  BSP server: Starting compilation server
+2023.09.08 11:01:44 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.08 11:01:44 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694151104-18128100411346814282.log'
+2023.09.08 11:01:44 INFO  BSP server: Running
+2023.09.08 11:01:44 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.08 11:01:44 INFO  BSP server: might give more details.
+2023.09.08 11:01:51 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala
+2023.09.08 11:02:01 ERROR Timeout waiting for 'build/initialize' response
+2023.09.08 11:02:01 WARN  Retrying connection to the build server scala-cli
+2023.09.08 11:02:01 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.08 11:02:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.08 11:02:03 INFO  BSP server: Starting compilation server
+2023.09.08 11:02:05 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.08 11:02:05 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694151125-1688329811868179978.log'
+2023.09.08 11:02:05 INFO  BSP server: Running
+2023.09.08 11:02:05 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.08 11:02:05 INFO  BSP server: might give more details.
+2023.09.08 11:02:21 ERROR Timeout waiting for 'build/initialize' response
+2023.09.08 11:02:21 WARN  Retrying connection to the build server scala-cli
+2023.09.08 11:02:21 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.08 11:02:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.08 11:02:23 INFO  BSP server: Starting compilation server
+2023.09.08 11:02:25 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.08 11:02:25 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694151145-4147807304385586700.log'
+2023.09.08 11:02:25 INFO  BSP server: Running
+2023.09.08 11:02:25 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.08 11:02:25 INFO  BSP server: might give more details.
+2023.09.08 11:02:41 ERROR Timeout waiting for 'build/initialize' response
+2023.09.08 11:02:41 WARN  Retrying connection to the build server scala-cli
+2023.09.08 11:02:41 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.08 11:02:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.08 11:02:43 INFO  BSP server: Starting compilation server
+2023.09.08 11:02:44 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.08 11:02:44 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694151164-11448071444164047218.log'
+2023.09.08 11:02:44 INFO  BSP server: Running
+2023.09.08 11:02:44 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.08 11:02:44 INFO  BSP server: might give more details.
+2023.09.08 11:03:01 ERROR Timeout waiting for 'build/initialize' response
+2023.09.08 11:03:01 WARN  Retrying connection to the build server scala-cli
+2023.09.08 11:03:01 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.08 11:03:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.08 11:03:02 INFO  BSP server: Starting compilation server
+2023.09.08 11:03:04 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.08 11:03:04 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694151184-11735252015980171884.log'
+2023.09.08 11:03:04 INFO  BSP server: Running
+2023.09.08 11:03:04 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.08 11:03:04 INFO  BSP server: might give more details.
+2023.09.08 11:03:21 ERROR Timeout waiting for 'build/initialize' response
+2023.09.08 11:03:21 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:546)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:447)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2023.09.08 11:03:21 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala
+2023.09.08 12:18:34 INFO  Shutting down server
+2023.09.08 12:18:34 INFO  shutting down Metals
+2023.09.08 12:18:34 INFO  Exiting server
+2023.09.10 01:38:18 INFO  Started: Metals version 1.0.1 in folders 'C:\Projects\Water-Supply-network' for client Visual Studio Code 1.82.0.
+Sep 10, 2023 1:38:18 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 10, 2023 1:38:18 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 10, 2023 1:38:18 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 10, 2023 1:38:19 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:C:\Projects\Water-Supply-network\.metals\metals (H2 2.1)
+Sep 10, 2023 1:38:19 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.041s)
+Sep 10, 2023 1:38:19 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 10, 2023 1:38:19 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.10 01:38:19 INFO  time: initialize in 0.9s
+2023.09.10 01:38:22 INFO  Attempting to connect to the build server...
+2023.09.10 01:38:22 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.10 01:38:22 WARN  No build session currently active to reload.
+2023.09.10 01:38:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.10 01:38:26 INFO  BSP server: Checking https://github.com/VirtusLab/scala-cli-scala-versions/raw/main/scala-versions-v1.json
+2023.09.10 01:38:26 INFO  BSP server: Checked https://github.com/VirtusLab/scala-cli-scala-versions/raw/main/scala-versions-v1.json
+2023.09.10 01:38:26 INFO  BSP server: Downloading https://github.com/VirtusLab/scala-cli-scala-versions/raw/main/scala-versions-v1.json
+2023.09.10 01:38:26 INFO  BSP server: Downloaded https://github.com/VirtusLab/scala-cli-scala-versions/raw/main/scala-versions-v1.json
+2023.09.10 01:38:28 INFO  BSP server: Checking https://github.com/coursier/jvm-index/raw/master/index.json
+2023.09.10 01:38:28 INFO  BSP server: Checked https://github.com/coursier/jvm-index/raw/master/index.json
+2023.09.10 01:38:28 INFO  BSP server: Downloading https://github.com/coursier/jvm-index/raw/master/index.json
+2023.09.10 01:38:28 INFO  no build target found for C:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.10 01:38:29 INFO  BSP server: Downloaded https://github.com/coursier/jvm-index/raw/master/index.json
+2023.09.10 01:38:30 INFO  time: code lens generation in 1.59s
+2023.09.10 01:38:30 INFO  time: code lens generation in 1.59s
+2023.09.10 01:38:30 INFO  time: code lens generation in 1.59s
+2023.09.10 01:38:30 INFO  time: code lens generation in 8.43s
+2023.09.10 01:38:30 INFO  BSP server: Starting compilation server
+2023.09.10 01:38:36 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.10 01:38:36 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694290116-3628381133759117326.log'
+2023.09.10 01:38:36 INFO  BSP server: Running
+2023.09.10 01:38:36 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.10 01:38:36 INFO  BSP server: might give more details.
+2023.09.10 01:38:43 ERROR Timeout waiting for 'build/initialize' response
+2023.09.10 01:38:43 WARN  Retrying connection to the build server scala-cli
+2023.09.10 01:38:43 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.10 01:38:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.10 01:38:45 INFO  BSP server: Starting compilation server
+2023.09.10 01:38:47 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.10 01:38:47 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694290127-6237656274417840158.log'
+2023.09.10 01:38:47 INFO  BSP server: Running
+2023.09.10 01:38:47 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.10 01:38:47 INFO  BSP server: might give more details.
+2023.09.10 01:39:03 ERROR Timeout waiting for 'build/initialize' response
+2023.09.10 01:39:03 WARN  Retrying connection to the build server scala-cli
+2023.09.10 01:39:03 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.10 01:39:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.10 01:39:06 INFO  BSP server: Starting compilation server
+2023.09.10 01:39:07 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.10 01:39:07 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694290147-2021833158509901091.log'
+2023.09.10 01:39:07 INFO  BSP server: Running
+2023.09.10 01:39:07 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.10 01:39:07 INFO  BSP server: might give more details.
+2023.09.10 01:39:23 ERROR Timeout waiting for 'build/initialize' response
+2023.09.10 01:39:23 WARN  Retrying connection to the build server scala-cli
+2023.09.10 01:39:23 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.10 01:39:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.10 01:39:26 INFO  BSP server: Starting compilation server
+2023.09.10 01:39:27 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.10 01:39:27 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694290167-7355459233197804206.log'
+2023.09.10 01:39:27 INFO  BSP server: Running
+2023.09.10 01:39:27 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.10 01:39:27 INFO  BSP server: might give more details.
+2023.09.10 01:39:43 ERROR Timeout waiting for 'build/initialize' response
+2023.09.10 01:39:43 WARN  Retrying connection to the build server scala-cli
+2023.09.10 01:39:43 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.10 01:39:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.10 01:39:46 INFO  BSP server: Starting compilation server
+2023.09.10 01:39:47 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.10 01:39:47 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694290187-9993244646591920300.log'
+2023.09.10 01:39:47 INFO  BSP server: Running
+2023.09.10 01:39:47 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.10 01:39:47 INFO  BSP server: might give more details.
+2023.09.10 01:40:03 ERROR Timeout waiting for 'build/initialize' response
+2023.09.10 01:40:03 WARN  Retrying connection to the build server scala-cli
+2023.09.10 01:40:03 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\Water-Supply-network\.scala-build\ide-options-v2.json, C:\Projects\Water-Supply-network)
+2023.09.10 01:40:03 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\Water-Supply-network\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.10 01:40:06 INFO  BSP server: Starting compilation server
+2023.09.10 01:40:08 INFO  BSP server: Error: scala.build.blooprifle.FailedToStartServerException: Server didn't start
+2023.09.10 01:40:08 INFO  BSP server: For more details, please see 'C:\Projects\Water-Supply-network\.scala-build\stacktraces\1694290208-10850848717758567385.log'
+2023.09.10 01:40:08 INFO  BSP server: Running
+2023.09.10 01:40:08 INFO  BSP server:   C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bloop output
+2023.09.10 01:40:08 INFO  BSP server: might give more details.
+2023.09.10 01:40:23 ERROR Timeout waiting for 'build/initialize' response
+2023.09.10 01:40:23 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at scala.meta.internal.metals.BuildServerConnection$.initialize(BuildServerConnection.scala:546)
+	at scala.meta.internal.metals.BuildServerConnection$.$anonfun$fromSockets$1(BuildServerConnection.scala:447)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2023.09.10 01:40:23 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala
+2023.09.10 01:48:01 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala
+2023.09.10 01:48:06 WARN  no build target for: C:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala
+2023.09.10 02:27:21 INFO  Shutting down server
+2023.09.10 02:27:21 INFO  shutting down Metals
+2023.09.10 02:27:21 INFO  Exiting server

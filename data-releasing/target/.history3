@@ -1,3 +1,22 @@
 1694115513741:update
 1694115522246:compile
 1694115536039:run
+1694295498236:compile
+1694295503366:run
+1694295667615:reload
+1694295671323:run
+1694295829983:reload
+1694295838619:run
+1694295940863:reload
+1694295945006:run
+1694296993507:[error] Caused by: org.apache.spark.sql.AnalysisException: cannot resolve 'array_contains(`canal_id`, 101)' due to data type mismatch: Input to function array_contains should have been array followed by a value with same element type, but it's [int, int].;;
+1694296993685:[error] 'Filter array_contains(canal_id#1, 101)
+1694297020939:run
+1694321767701:reload
+1694321769855:run
+1694322991310:reload
+1694322994530:run
+1694323782169:sbt
+1694323785640:run
+1694330038762:update
+1694330045095:run
