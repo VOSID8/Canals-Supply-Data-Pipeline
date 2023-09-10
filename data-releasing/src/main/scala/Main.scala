@@ -20,7 +20,7 @@ import com.datastax.spark.connector.cql.CassandraConnector
 import org.apache.spark.sql.streaming.Trigger
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.{SparkSession, Row}
-import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}
+import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType, FloatType}
 import org.apache.spark.sql._
 import java.util
 import java.util.Properties
@@ -31,7 +31,6 @@ case class SensorData(sensor_id: Int, canal_id: Int, level: Int)
 object main extends App {
   @transient lazy val logger: Logger = Logger.getLogger(getClass.getName)
 
-  //Feature built for Code4GovtTech by Siddharth Banga
   val spark = SparkSession.builder()
       .master("local[3]")
       .appName("enrichment")
@@ -42,15 +41,19 @@ object main extends App {
       .config("spark.sql.extensions", "com.datastax.spark.connector.CassandraSparkExtensions")
       .config("spark.sql.catalog.lh", "com.datastax.spark.connector.datasource.CassandraCatalog")
       .getOrCreate()
+  
+  val schema = StructType(Seq(
+    StructField("sensor_id", IntegerType, nullable = false),
+    StructField("canal_id", IntegerType, nullable = false),
+    StructField("level", IntegerType, nullable = false)
+  ))
 
-  val sensorsDb = spark.read
-      .format("org.apache.spark.sql.cassandra")
-      .option("keyspace", "canals_db")
-      .option("table", "sensors")
-      .load()
+  val schema2 = StructType(Seq(
+    StructField("canal_id", IntegerType, nullable = false),
+    StructField("flow", FloatType, nullable = false)
+  ))
 
   val env = StreamExecutionEnvironment.getExecutionEnvironment
-
   val kafkaSource = KafkaSource.builder()
   .setBootstrapServers("localhost:9092")
   .setTopics("flinkex")
@@ -59,31 +62,72 @@ object main extends App {
   .setValueOnlyDeserializer(new SimpleStringSchema())
   .build()
 
+  val serializer = KafkaRecordSerializationSchema.builder()
+  .setValueSerializationSchema(new SimpleStringSchema())
+  .setTopic("flinkout")
+  .build()
+
+  val kafkaSink = KafkaSink.builder()
+  .setBootstrapServers("localhost:9092")
+  .setRecordSerializer(serializer)
+  .build()
+
   val stream2 = env.fromSource(kafkaSource, WatermarkStrategy.noWatermarks(), "Kafka Source")
 
-  val schema = StructType(Seq(
-    StructField("sensor", IntegerType, nullable = false),
-    StructField("canal", IntegerType, nullable = false),
-    StructField("intensity", IntegerType, nullable = false)
-  ))
-
-  val stream1: DataFrame = stream2.map(x => {
+  val stream1 = stream2.map(x => {
     val arr = x.split(",")
-    val sensor = arr(0).toInt
-    val canal = arr(1).toInt
-    val intensity = arr(2).toInt
-    println(arr)
-    println(sensor + " " + canal+ " " + intensity)
-    val data = Seq((sensor, canal, intensity))
-    val rows = data.map { case (sensor, canal, intensity) => Row(sensor, canal, intensity) }
+    val sensor_id = arr(0).toInt
+    val canal_id = arr(1).toInt
+    val level = arr(2).toInt
+    val data = Seq((sensor_id, canal_id, level))
+    val rows = data.map { case (sensor_id, canal, level) => Row(sensor_id, canal, level) }
     val df = spark.createDataFrame(spark.sparkContext.parallelize(rows), schema)
     df.write
       .format("org.apache.spark.sql.cassandra")
       .options(Map("keyspace" -> "canals_db", "table" -> "sensors")) 
-      .mode("overwrite")
+      .mode("append")
       .save()
-  }
+    val sensorsDb = spark.read
+      .format("org.apache.spark.sql.cassandra")
+      .option("keyspace", "canals_db")
+      .option("table", "sensors")
+      .load()
+    val canalDb = spark.read
+      .format("org.apache.spark.sql.cassandra")
+      .option("keyspace", "canals_db")
+      .option("table", "canals")
+      .load()
+    import spark.implicits._
+    val flow = sensorsDb.filter(sensorsDb("canal_id") === canal_id)
+      .agg(avg("level")).first().getDouble(0).toFloat
+    val flow_canal = canalDb.filter(canalDb("canal_id") === canal_id)
+      .first().getFloat(1).toFloat
+
+    // if(flow!=flow_canal){
+    //   val data2 = Seq((canal_id, flow))
+    //   val rows2 = data2.map { case (canal_id, flow) => Row(canal_id, flow) }
+    //   val df2 = spark.createDataFrame(spark.sparkContext.parallelize(rows2), schema2)
+    //   df2.write
+    //     .format("org.apache.spark.sql.cassandra")
+    //     .options(Map("keyspace" -> "canals_db", "table" -> "canals")) 
+    //     .mode("append")
+    //     .save()
+    // }
+    //   // if(flow_avg>flow_canal){
+    //   //   val x = "open"
+    //   //   val combined = (canal_id, flow_avg, x)
+    //   // }
+    //   // else{
+    //   //   val x = "close"
+    //   //   val combined = (canal_id, flow_avg, x)
+    //   // }
+      
+    //   // val combined = (canal_id, flow_avg, x)
+    }
+    //combined
+  //}
   )
+  //formattedStream.sinkTo(kafkaSink)
   env.execute("main")
 
 }

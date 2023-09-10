@@ -1,0 +1,21 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"46","parents":[]},"eventTime":1694341454838,"message":"Compiling water-supply-network","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Projects/Water-Supply-network/#water-supply-network/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"46","parents":[]},"eventTime":1694341454851,"message":"Compiled water-supply-network","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Projects/Water-Supply-network/#water-supply-network/Compile"},"errors":0,"warnings":0,"time":13}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"47","parents":[]},"eventTime":1694341454859,"message":"Compiling water-supply-network-test","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Projects/Water-Supply-network/#water-supply-network/Test"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"47","parents":[]},"eventTime":1694341454867,"message":"Compiled water-supply-network-test","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Projects/Water-Supply-network/#water-supply-network/Test"},"errors":0,"warnings":0,"time":8}})[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 10-Sep-2023, 3:54:14 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / collectAnalyses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0manalysis location (C:\Projects\Water-Supply-network\target\scala-2.12\zinc\inc_compile_2.12.zip,true)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 10-Sep-2023, 3:54:14 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

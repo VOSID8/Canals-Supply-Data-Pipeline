@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala:102:5: ')' expected but '.' found.[0m
-[0m[[0m[31merror[0m] [0m[0m  df.show()[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala:125:5: Unmatched closing brace '}' ignored here[0m
+[0m[[0m[31merror[0m] [0m[0m    }[0m
 [0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Projects\Water-Supply-network\data-releasing\src\main\scala\Main.scala:103:3: ';' expected but ')' found.[0m
-[0m[[0m[31merror[0m] [0m[0m  )[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

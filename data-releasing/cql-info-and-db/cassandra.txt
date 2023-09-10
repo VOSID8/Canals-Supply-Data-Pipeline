@@ -1,6 +1,6 @@
 CREATE KEYSPACE canals_db WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
 USE canals_db;
-CREATE TABLE canals(canal_id int PRIMARY KEY, flow int);
+CREATE TABLE canals(canal_id int PRIMARY KEY, flow float);
 CREATE TABLE sensors(sensor_id int PRIMARY KEY, canal_id int, longitude float, latitude float, level int)
 
 INSERT INTO canals (canal_id, flow)
