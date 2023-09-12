@@ -50,7 +50,8 @@ object main extends App {
 
   val schema2 = StructType(Seq(
     StructField("canal_id", IntegerType, nullable = false),
-    StructField("flow", FloatType, nullable = false)
+    StructField("flow", FloatType, nullable = false),
+    StructField("status", IntegerType, nullable = false)
   ))
 
   val env = StreamExecutionEnvironment.getExecutionEnvironment
@@ -102,17 +103,37 @@ object main extends App {
       .agg(avg("level")).first().getDouble(0).toFloat
     val flow_canal = canalDb.filter(canalDb("canal_id") === canal_id)
       .first().getFloat(1).toFloat
-
-    // if(flow!=flow_canal){
-    //   val data2 = Seq((canal_id, flow))
-    //   val rows2 = data2.map { case (canal_id, flow) => Row(canal_id, flow) }
-    //   val df2 = spark.createDataFrame(spark.sparkContext.parallelize(rows2), schema2)
-    //   df2.write
-    //     .format("org.apache.spark.sql.cassandra")
-    //     .options(Map("keyspace" -> "canals_db", "table" -> "canals")) 
-    //     .mode("append")
-    //     .save()
-    // }
+    val status = canalDb.filter(canalDb("canal_id") === canal_id)
+      .first().getInt(2).toInt
+    var status_new:Int = status;
+    if(flow == 0){status_new= 0;}
+    else if(flow>0 && flow<1){status_new = 1;}
+    else if(flow>=1 && flow<2){status_new = 2;}
+    else{status_new = 3;}
+    if(flow!=flow_canal){
+      val data2 = Seq((canal_id, flow, status_new))
+      val rows2 = data2.map { case (canal_id, flow, status_new) 
+        => Row(canal_id, flow, status_new) }
+      val df2 = spark.createDataFrame(spark.sparkContext.parallelize(rows2), schema2)
+      df2.write
+        .format("org.apache.spark.sql.cassandra")
+        .options(Map("keyspace" -> "canals_db", "table" -> "canals")) 
+        .mode("append")
+        .save()
+    }
+    val combined = s"$canal_id,$flow,$status_new"
+    println(combined)
+    combined
+  })
+  //println(stream1)
+  // val formattedStream: DataStream[String] = stream1.flatMap(_.map {
+  //   case (a, b, c) => s"$a,$b,$c"
+  // }).map(_.mkString(""))
+  stream1.sinkTo(kafkaSink)
+  // val formattedStream: DataStream[String] = combined.flatMap(_.map {
+  //         case (a, b, c) => s"$a,$b,$c"
+  //       }).map(_.mkString(""))
+  // formattedStream.sinkTo(kafkaSink)
     //   // if(flow_avg>flow_canal){
     //   //   val x = "open"
     //   //   val combined = (canal_id, flow_avg, x)
@@ -123,10 +144,9 @@ object main extends App {
     //   // }
       
     //   // val combined = (canal_id, flow_avg, x)
-    }
+    
     //combined
   //}
-  )
   //formattedStream.sinkTo(kafkaSink)
   env.execute("main")
 
